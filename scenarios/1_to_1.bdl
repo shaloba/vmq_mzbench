@@ -17,7 +17,7 @@ pool(size = 1000,
      worker_type = mqtt_worker,
      worker_start = poisson(100 rps)):
 
-            connect(host = "127.0.0.1",
+            connect(host = "dev-csp.dc.dojo-labs.com",
                     port = 1883,
                     client = fixed_client_id("pool1", worker_id()),
                     clean_session = true,
